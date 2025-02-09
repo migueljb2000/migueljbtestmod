@@ -49,6 +49,7 @@ public class Migueljbmodtest {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.TESTIUM);
+            event.accept(ModItems.TESTIUMG);
         }
     }
 
