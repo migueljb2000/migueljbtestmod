@@ -1,6 +1,8 @@
 package net.migueljb.migueljbmodtest;
 
 import com.mojang.logging.LogUtils;
+import net.migueljb.migueljbmodtest.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,14 +17,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(migueljbmodtest.MOD_ID)
-public class migueljbmodtest {
+@Mod(Migueljbmodtest.MOD_ID)
+public class Migueljbmodtest {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "migueljbmodtest";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public migueljbmodtest(FMLJavaModLoadingContext context) {
+    public Migueljbmodtest(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         // Register the commonSetup method for modloading
@@ -30,6 +32,8 @@ public class migueljbmodtest {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -43,6 +47,9 @@ public class migueljbmodtest {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.TESTIUM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
