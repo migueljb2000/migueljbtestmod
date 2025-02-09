@@ -50,6 +50,7 @@ public class Migueljbmodtest {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.TESTIUM);
             event.accept(ModItems.TESTIUMG);
+            event.accept(ModItems.TESTIUMR);
         }
     }
 

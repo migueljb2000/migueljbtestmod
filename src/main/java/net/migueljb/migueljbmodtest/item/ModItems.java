@@ -16,6 +16,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> TESTIUMG = ITEMS.register("testiumg",
             () -> new Item(new Item.Properties().setId(ITEMS.key("testiumg"))));
+    public static final RegistryObject<Item> TESTIUMR = ITEMS.register("testiumr",
+            () -> new Item(new Item.Properties().setId(ITEMS.key("testiumr"))));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
