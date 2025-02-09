@@ -1,6 +1,7 @@
 package net.migueljb.migueljbmodtest;
 
 import com.mojang.logging.LogUtils;
+import net.migueljb.migueljbmodtest.block.ModBlocks;
 import net.migueljb.migueljbmodtest.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +35,7 @@ public class Migueljbmodtest {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,6 +53,9 @@ public class Migueljbmodtest {
             event.accept(ModItems.TESTIUM);
             event.accept(ModItems.TESTIUMG);
             event.accept(ModItems.TESTIUMR);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept((ModBlocks.TESTIUMR_BLOCK));
         }
     }
 

@@ -1,5 +1,8 @@
 {
   "item.migueljbmodtest.testium": "Testium Orb",
   "item.migueljbmodtest.testiumg": "Green Testium Orb",
-  "item.migueljbmodtest.testiumr": "Red Testium Orb"
+  "item.migueljbmodtest.testiumr": "Red Testium Orb",
+  "item.migueljbmodtest.testiumr_block": "Red Testium Block",
+  "block.migueljbmodtest.testiumr_block": "Red Testium Block"
+
 }
