@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "migueljbmodtest:testiumr_block"
+  ],
+  "result": {
+    "count": 4,
+    "id": "migueljbmodtest:testiumr"
+  }
+}
