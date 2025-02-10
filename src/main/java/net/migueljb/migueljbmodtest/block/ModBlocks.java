@@ -3,7 +3,6 @@ package net.migueljb.migueljbmodtest.block;
 
 
 import net.migueljb.migueljbmodtest.Migueljbmodtest;
-import net.migueljb.migueljbmodtest.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
