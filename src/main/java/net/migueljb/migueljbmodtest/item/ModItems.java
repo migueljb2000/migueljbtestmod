@@ -1,6 +1,7 @@
 package net.migueljb.migueljbmodtest.item;
 
 import net.migueljb.migueljbmodtest.Migueljbmodtest;
+import net.migueljb.migueljbmodtest.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +19,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().setId(ITEMS.key("testiumg"))));
     public static final RegistryObject<Item> TESTIUMR = ITEMS.register("testiumr",
             () -> new Item(new Item.Properties().setId(ITEMS.key("testiumr"))));
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            ()-> new ChiselItem(new Item.Properties()
+                    .durability(192).setId(ITEMS.key("chisel"))));
 
     public static void  register(IEventBus eventBus) {
         ITEMS.register(eventBus);
