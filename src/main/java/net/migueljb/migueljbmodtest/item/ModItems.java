@@ -31,7 +31,7 @@ public class ModItems {
             ()-> new TesterItem(new Item.Properties()
                     .durability(192).setId(ITEMS.key("tester"))));
     public static final RegistryObject<Item> RED_COAL = ITEMS.register("red_coal",
-            ()-> new FuelItem(new Item.Properties().setId(ITEMS.key("red_coal")), 1200));
+            ()-> new FuelItem(new Item.Properties().setId(ITEMS.key("red_coal")), 20000));
 
     public static final RegistryObject<Item> GREEN_BEEF = ITEMS.register("green_beef",
             () -> new Item(new Item.Properties()
