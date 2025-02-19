@@ -1,6 +1,8 @@
 package net.migueljb.migueljbmodtest.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
@@ -16,6 +18,7 @@ public class TainterBlock extends Block {
     @Override
     protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos,
                                                Player pPlayer, BlockHitResult pHitResult) {
-        return super.useWithoutItem(pState, pLevel, pPos, pPlayer, pHitResult);
+        pLevel.playSound(pPlayer, pPos, SoundEvents.BLASTFURNACE_FIRE_CRACKLE, SoundSource.BLOCKS, 1f, 1f);
+        return InteractionResult.SUCCESS;
     }
 }

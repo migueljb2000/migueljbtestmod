@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "north": "migueljbmodtest:block/tainter_furnace_front",
+    "south": "migueljbmodtest:block/tainter_furnace_side",
+    "east": "migueljbmodtest:block/tainter_furnace_side",
+    "west": "migueljbmodtest:block/tainter_furnace_side",
+    "up": "migueljbmodtest:block/tainter_furnace_top",
+    "down": "migueljbmodtest:block/tainter_furnace_top"
+  }
+}

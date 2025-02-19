@@ -3,10 +3,12 @@
   "item.migueljbmodtest.testiumg": "Green Testium Orb",
   "item.migueljbmodtest.testiumr": "Red Testium Orb",
   "item.migueljbmodtest.testiumr_block": "Red Testium Block",
+  "item.migueljbmodtest.tainter_block": "Tainter Furnace",
   "item.migueljbmodtest.chisel": "Test Chisel",
   "item.migueljbmodtest.tester": "Tester Tool",
 
   "block.migueljbmodtest.testiumr_block": "Red Testium Block",
+  "block.migueljbmodtest.tainter_block": "Tainter Furnace",
 
   "creativetab.migueljbmodtest.testium_items": "Testium Items",
   "creativetab.migueljbmodtest.testium_blocks": "Testium Blocks"

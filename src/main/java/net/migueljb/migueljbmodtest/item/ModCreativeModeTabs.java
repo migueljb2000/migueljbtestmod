@@ -39,6 +39,7 @@ public class ModCreativeModeTabs {
                         @Override
                         public void accept(CreativeModeTab.ItemDisplayParameters pParameters, CreativeModeTab.Output pOutput) {
                             pOutput.accept((ModBlocks.TESTIUMR_BLOCK.get()));
+                            pOutput.accept((ModBlocks.TAINTER_BLOCK.get()));
                         }
                     }).build());
 
