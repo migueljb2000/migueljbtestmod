@@ -2,6 +2,7 @@ package net.migueljb.migueljbmodtest.item;
 
 import net.migueljb.migueljbmodtest.Migueljbmodtest;
 import net.migueljb.migueljbmodtest.item.custom.ChiselItem;
+import net.migueljb.migueljbmodtest.item.custom.FuelItem;
 import net.migueljb.migueljbmodtest.item.custom.TesterItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -29,6 +30,9 @@ public class ModItems {
     public static final RegistryObject<Item> TESTER = ITEMS.register("tester",
             ()-> new TesterItem(new Item.Properties()
                     .durability(192).setId(ITEMS.key("tester"))));
+    public static final RegistryObject<Item> RED_COAL = ITEMS.register("red_coal",
+            ()-> new FuelItem(new Item.Properties().setId(ITEMS.key("red_coal")), 1200));
+
     public static final RegistryObject<Item> GREEN_BEEF = ITEMS.register("green_beef",
             () -> new Item(new Item.Properties()
                     .food(ModFoodProperties.GREEN_BEEF_FOOD, ModFoodProperties.GREEN_BEEF_CONSUMABLE)

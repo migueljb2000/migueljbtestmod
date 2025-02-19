@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:coal",
+    "migueljbmodtest:testiumr"
+  ],
+  "result": {
+    "count": 1,
+    "id": "migueljbmodtest:red_coal"
+  }
+}
