@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "migueljbmodtest:testiumr_block",
+    "A": "minecraft:ender_pearl"
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "migueljbmodtest:tainter_block"
+  }
+}
