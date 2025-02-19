@@ -9,9 +9,14 @@
   "item.migueljbmodtest.green_beef": "Green Beef",
   "item.migueljbmodtest.raw_green_beef": "Raw Green Beef",
   "item.migueljbmodtest.red_coal": "Red Coal",
+  "tooltip.migueljbmodtest.red_coal": "Burns like lava",
 
   "block.migueljbmodtest.testiumr_block": "Red Testium Block",
   "block.migueljbmodtest.tainter_block": "Tainter Furnace",
+  "tooltip.migueljbmodtest.tainter_block.tooltip" : "Functionality will be added §9soon§r ^^",
+  "tooltip.migueljbmodtest.test_item.shift_down" : "Rework pending",
+  "tooltip.migueljbmodtest.test_item" :  "Throws ender pearls §9shift§r",
+
 
   "creativetab.migueljbmodtest.testium_items": "Testium Items",
   "creativetab.migueljbmodtest.testium_blocks": "Testium Blocks"

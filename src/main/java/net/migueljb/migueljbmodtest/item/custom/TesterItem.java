@@ -1,12 +1,16 @@
 package net.migueljb.migueljbmodtest.item.custom;
 
 import net.migueljb.migueljbmodtest.block.ModBlocks;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ThrownEnderpearl;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.Vec3;
@@ -39,6 +43,17 @@ public class TesterItem extends Item{
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.FAIL;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        if(Screen.hasShiftDown()){
+            pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.test_item"));
+            pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.test_item.shift_down"));
+        }else{
+            pTooltipComponents.add(Component.translatable("tooltip.migueljbmodtest.test_item"));
+        }
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }
 }
 
