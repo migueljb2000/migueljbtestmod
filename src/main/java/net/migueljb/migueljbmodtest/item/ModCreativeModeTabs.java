@@ -26,6 +26,8 @@ public class ModCreativeModeTabs {
                             pOutput.accept((ModItems.TESTIUMG.get()));
                             pOutput.accept((ModItems.CHISEL).get());
                             pOutput.accept((ModItems.TESTER).get());
+                            pOutput.accept((ModItems.GREEN_BEEF).get());
+                            pOutput.accept((ModItems.RAW_GREEN_BEEF).get());
 
                         }
                     }).build());

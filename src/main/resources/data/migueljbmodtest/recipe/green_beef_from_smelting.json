@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 0.3,
+  "group": "testium",
+  "ingredient":"migueljbmodtest:raw_green_beef",
+  "result": {
+    "id": "migueljbmodtest:green_beef"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:beef",
+    "migueljbmodtest:testiumg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "migueljbmodtest:raw_green_beef"
+  }
+}
