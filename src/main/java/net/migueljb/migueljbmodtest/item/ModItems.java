@@ -22,19 +22,31 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Migueljbmodtest.MOD_ID);
 
+    //ITEMS
+
     public static final RegistryObject<Item> TESTIUM = ITEMS.register("testium",
             () -> new Item(new Item.Properties().setId(ITEMS.key("testium"))));
-
     public static final RegistryObject<Item> TESTIUMG = ITEMS.register("testiumg",
             () -> new Item(new Item.Properties().setId(ITEMS.key("testiumg"))));
     public static final RegistryObject<Item> TESTIUMR = ITEMS.register("testiumr",
             () -> new Item(new Item.Properties().setId(ITEMS.key("testiumr"))));
+    public static final RegistryObject<Item> GREENIUM = ITEMS.register("greenium",
+            () -> new Item(new Item.Properties().setId(ITEMS.key("greenium"))));
+    public static final RegistryObject<Item> REDIUM = ITEMS.register("redium",
+            () -> new Item(new Item.Properties().setId(ITEMS.key("redium"))));
+
+    //CUSTOM ITEMS
+
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             ()-> new ChiselItem(new Item.Properties()
                     .durability(192).setId(ITEMS.key("chisel"))));
+
     public static final RegistryObject<Item> TESTER = ITEMS.register("tester",
             ()-> new TesterItem(new Item.Properties()
                     .durability(192).setId(ITEMS.key("tester"))));
+
+    //FUEL ITEMS
+
     public static final RegistryObject<Item> RED_COAL = ITEMS.register("red_coal",
             ()-> new FuelItem(new Item.Properties().setId(ITEMS.key("red_coal")), 20000){
                 @Override
@@ -43,6 +55,8 @@ public class ModItems {
                     super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
                 }
             });
+
+    //FOOD ITEMS
 
     public static final RegistryObject<Item> GREEN_BEEF = ITEMS.register("green_beef",
             () -> new Item(new Item.Properties()

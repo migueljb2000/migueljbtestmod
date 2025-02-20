@@ -23,6 +23,16 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Migueljbmodtest.MOD_ID);
 
+    public static final RegistryObject<Block> GREENIUM_ORE_BLOCK = registerBlock("greenium_ore_block",
+            ()-> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.GLASS)
+                    .setId(BLOCKS.key("greenium_ore_block"))));
+
+    public static final RegistryObject<Block> REDIUM_ORE_BLOCK = registerBlock("redium_ore_block",
+            ()-> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.GLASS)
+                    .setId(BLOCKS.key("redium_ore_block"))));
+
     public static final RegistryObject<Block> TESTIUMR_BLOCK = registerBlock("testiumr_block",
             ()-> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)
